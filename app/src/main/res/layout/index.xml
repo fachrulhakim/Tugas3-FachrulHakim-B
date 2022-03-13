@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/IVR"
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_weight="1"
+            android:onClick="clickRumahSakit"
+            app:srcCompat="@drawable/hospital"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/IVPolisi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="clickKantorPolisi"
+            app:srcCompat="@drawable/policestation" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/IVBelanja"
+            android:onClick="clickPusatPerbelanjaan"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/shoppingcenter" />
+
+        <ImageView
+            android:id="@+id/IVSekolah"
+            android:onClick="clickSekolah"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/school" />
+    </TableRow>
+
+</LinearLayout>
